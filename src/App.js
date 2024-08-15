@@ -136,6 +136,7 @@ const Widgets = ({
                 key={index}
                 deleteWidgetHandler={deleteWidgetHandler}
                 name={name}
+                chailder={<h3>Card</h3>}
               />
             );
           })}

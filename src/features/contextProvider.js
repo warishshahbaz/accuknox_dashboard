@@ -8,11 +8,13 @@ const ContextProvider = ({ children }) => {
       type: "",
       name: "Cloud Account",
       isChecked: true,
+      children: <div>card body</div>,
     },
     {
       type: "",
       name: "Cloud Account Risk Assessment ",
       isChecked: true,
+      children: <div>card body</div>,
     },
   ]);
 
@@ -21,11 +23,13 @@ const ContextProvider = ({ children }) => {
       type: "",
       name: "Top 5 Namespaces Speccific Alerts ",
       isChecked: true,
+      children: <div>card body</div>,
     },
     {
       type: "",
       name: "Workload Alerts",
       isChecked: true,
+      children: <div>card body</div>,
     },
   ]);
 
@@ -34,11 +38,13 @@ const ContextProvider = ({ children }) => {
       type: "",
       name: "Image Risk Assessment",
       isChecked: true,
+      children: <div>card body</div>,
     },
     {
       type: "",
       name: "Image Security Issues",
       isChecked: true,
+      children: "",
     },
   ]);
 

@@ -125,21 +125,18 @@ const Widgets = ({
   deleteWidgetHandler,
 }) => {
   return (
-    <div className="bg-[#f0f0f5] mb-2 px-4 py-4 rounded-md ">
-      <p className="text-[15px] font-semibold text-[#14147d] pb-2 ">{title}</p>
-      <div className="flex gap-4 flex-wrap ">
+    <div className="bg-[#f0f0f5] mb-2 px-4 py-4 rounded-md">
+      <p className="text-[15px] font-semibold text-[#14147d] pb-2">{title}</p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {data &&
-          data?.map((item, index) => {
-            return (
-              <Card
-                item={item}
-                key={index}
-                deleteWidgetHandler={deleteWidgetHandler}
-                name={name}
-                chailder={<h3>Card</h3>}
-              />
-            );
-          })}
+          data.map((item, index) => (
+            <Card
+              item={item}
+              key={index}
+              deleteWidgetHandler={deleteWidgetHandler}
+              name={name}
+            />
+          ))}
         <Card
           type="add_widget"
           name={name}
